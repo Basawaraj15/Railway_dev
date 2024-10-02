@@ -143,10 +143,7 @@ public class Product {
 		this.isActive = isActive;
 	}
 
-	public Product() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+	
 	
 
 }
