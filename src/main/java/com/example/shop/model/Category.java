@@ -16,62 +16,21 @@ import lombok.Setter;
 @Entity
 public class Category {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
 
-	private String name;
+    private String name;
 
-	private String imageName;
+    private String imageName;
 
-	private Boolean isActive;
+    private Boolean isActive;
 
-	public Integer getId() {
-		return id;
-	}
+    // Lombok will handle the constructors, getters, setters, and toString method
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getImageName() {
-		return imageName;
-	}
-
-	public void setImageName(String imageName) {
-		this.imageName = imageName;
-	}
-
-	public Boolean getIsActive() {
-		return isActive;
-	}
-
-	public void setIsActive(Boolean isActive) {
-		this.isActive = isActive;
-	}
-
-	@Override
-	public String toString() {
-		return "Category [id=" + id + ", name=" + name + ", imageName=" + imageName + ", isActive=" + isActive + "]";
-	}
-
-	public Category(Integer id, String name, String imageName, Boolean isActive) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.imageName = imageName;
-		this.isActive = isActive;
-	}
-
-	
-	
-
+    @Override
+    public String toString() {
+        return "Category [id=" + id + ", name=" + name + ", imageName=" + imageName + ", isActive=" + isActive + "]";
+    }
 }
+
