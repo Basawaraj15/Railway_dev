@@ -71,10 +71,7 @@ public class Category {
 		this.isActive = isActive;
 	}
 
-	public Category() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+	
 	
 
 }
