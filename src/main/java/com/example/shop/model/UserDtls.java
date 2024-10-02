@@ -213,10 +213,7 @@ public class UserDtls {
 		this.resetToken = resetToken;
 	}
 
-	public UserDtls() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+	
 
 	
 }
