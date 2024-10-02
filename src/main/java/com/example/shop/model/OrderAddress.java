@@ -19,10 +19,7 @@ public class OrderAddress {
 
 	private String email;
 
-	public OrderAddress() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+	
 
 	public OrderAddress(Integer id, String name, String email, String mobileNo, String address, String city,
 			String state, String pincode) {
