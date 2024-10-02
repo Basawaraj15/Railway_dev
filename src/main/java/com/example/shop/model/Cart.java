@@ -101,10 +101,7 @@ public class Cart {
 		this.totalOrderPrice = totalOrderPrice;
 	}
 
-	public Cart() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+	
 
 	
 }
