@@ -117,10 +117,7 @@ public class OrderRequest {
 		this.paymentType = paymentType;
 	}
 
-	public OrderRequest() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+	
 
 	
 
