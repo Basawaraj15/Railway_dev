@@ -149,10 +149,7 @@ public class ProductOrder {
 		this.orderAddress = orderAddress;
 	}
 
-	public ProductOrder() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+	
 
 	
 }
