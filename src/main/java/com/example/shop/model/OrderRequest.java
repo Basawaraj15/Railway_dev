@@ -18,17 +18,7 @@ public class OrderRequest {
 
     // Lombok @Data will handle getters, setters, and toString automatically
 
-    public OrderRequest(String name, String email, String mobileNo, String address, String city,
-                        String state, String pincode, String paymentType) {
-        this.name = name;
-        this.email = email;
-        this.mobileNo = mobileNo;
-        this.address = address;
-        this.city = city;
-        this.state = state;
-        this.pincode = pincode;
-        this.paymentType = paymentType;
-    }
+  
     @Override
 	public String toString() {
 		return "OrderRequest [Name=" + Name +  ", email=" + email + ", mobileNo="
