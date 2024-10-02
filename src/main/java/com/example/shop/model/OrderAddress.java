@@ -4,10 +4,16 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Data
 @Entity
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 public class OrderAddress {
 
     @Id
@@ -22,19 +28,11 @@ public class OrderAddress {
     private String state;
     private String pincode;
 
-    // Lombok @Data will handle getters, setters, toString, equals, and hashCode
-
-    // Constructor
-    public OrderAddress(Integer id, String name, String email, String mobileNo, String address, 
-                        String city, String state, String pincode) {
-        this.id = id;
-        this.name = name;
-        this.email = email;
-        this.mobileNo = mobileNo;
-        this.address = address;
-        this.city = city;
-        this.state = state;
-        this.pincode = pincode;
+    @Override
+    public String toString() {
+        return "OrderAddress [id=" + id + ", name=" + name + ", email=" + email + ", mobileNo=" + mobileNo
+                + ", address=" + address + ", city=" + city + ", state=" + state + ", pincode=" + pincode + "]";
     }
 }
+
 
