@@ -29,5 +29,11 @@ public class OrderRequest {
         this.pincode = pincode;
         this.paymentType = paymentType;
     }
+    @Override
+	public String toString() {
+		return "OrderRequest [Name=" + Name +  ", email=" + email + ", mobileNo="
+				+ mobileNo + ", address=" + address + ", city=" + city + ", state=" + state + ", pincode=" + pincode
+				+ ", paymentType=" + paymentType + "]";
+	}
 }
 
