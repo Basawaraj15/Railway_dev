@@ -23,4 +23,18 @@ public class OrderRequest {
     private String state;
     private String pincode;
     private String paymentType;
+
+    @Override
+    public String toString() {
+        return "OrderRequest {" +
+                "name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", mobileNo='" + mobileNo + '\'' +
+                ", address='" + address + '\'' +
+                ", city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", pincode='" + pincode + '\'' +
+                ", paymentType='" + paymentType + '\'' +
+                '}';
+    }
 }
